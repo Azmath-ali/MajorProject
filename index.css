@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    overflow: hidden;
+}
+
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+#gallery{
+    font-size: 12vw;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 999;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+#pf{
+    font-size: 12vw;
+    z-index: 99999;
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    transform: translate(-50%,0) rotate(30deg);
+    transform-origin: 0 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+
+
+}
+
+
+#gola{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    background-color: #d5a7b4;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+
+
+#pinkpart{
+    width: 30vw;
+    padding: 4vw 3vw;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #d5a7b4;
+    z-index: 9999;
+
+}
+
+
+
+
+/* NAV */
+
+#home #nav, #second #nav{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 50px ;
+
+}
+
+#nav img{
+    width: 110px;
+}
+#nav h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+
+
+
+
+/* BTM-NAV */
+#home #btm-nav,#second #btm-nav{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+#btm-nav img{
+    width: 90px;
+}
+
+
+
+
+
+/* CENTER-IMAGE */
+
+#center-image{
+    width: 30vw;
+    /* background-color: red; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+#center-image h5{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#image{
+    width: 100%;
+    height: 260px;
+    position: relative;
+}
+
+#image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+/*  CIRCLE */
+
+#circle{
+    width: 70vw;
+    height: 70vw;
+    /* background-color: #fff; */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#circle img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* TOP */
+
+#top{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: red; */
+}
+
+#top img{
+    transform: translate(-50%,-50%) rotate(-180deg);
+}
+
+
+#top img:nth-child(1){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(2);
+}
+
+#top img:nth-child(2){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1.5);
+}
+
+#top img:nth-child(3){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1);
+}
+
+
+
+
+
+/* BTM */
+
+#btm{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: blue; */
+}
+
+
+
+#btm img:nth-child(1){
+    transform: translate(-50%,-50%) scale(2);
+}
+
+#btm img:nth-child(2){
+    transform: translate(-50%,-50%) scale(1.5);
+}
+
+
+#btm img:nth-child(3){
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+/* SMALL-CIRCLE */
+
+#small-circle{
+    width: 45vw;
+    height: 45vw;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+
+
+
+
+
+#second{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* S-TOP. */
+#s-top{
+    width: 100%;
+    height: 65%;
+    /* background-color: #fff; */
+    border: 1px solid #dadaad;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle{
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 150%;
+    transform: translate(-50%,-50%);
+}
+
+
+.pi{
+    left: 40%;
+    background:linear-gradient( #d5a7b4,#d5a7b4);
+    z-index: 99;
+
+}
+
+.pu{
+    left:  55%;
+    background:linear-gradient(#b4aad5,#b4aad5);
+  
+}
+
+#s-top h1{
+    text-transform: uppercase;
+    font-size: 25vw;
+    font-weight: 600;
+    line-height: 18vw;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    color: #fff;
+    z-index: 999999;
+}
+
+
+
+
+
+
+
+
+/* S-BTM */
+
+
+#s-btm{
+    width: 100%;
+    height: 35%;
+    /* background-color: rgb(118, 237, 193); */
+    position: relative;
+}
+
+
+#s-btm p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3vw;
+    text-align: center;
+    line-height: 1;
+}
+
+#s-btm p:nth-child(1){
+    opacity: 0;
+}
+
+
+
+
+
+/* RESPONSIVE... */
+
+
+@media(max-width:500px){
+    #overlay #nav, #second #nav{
+        padding: 7px 2px;
+    }
+
+    #nav h1{
+        font-size: 5vw;
+    }
+
+    #overlay #btm-nav, #second #btm-nav{
+        padding: 5px 1px;
+    }
+
+    #center-image{
+        width: 80vw;
+    }
+
+    #center-image h5{
+        margin-bottom: 5px;
+    }
+
+    #image img{
+        height: 180px;
+    }
+
+    #circle{
+        width: 110vw;
+        height: 110vw;
+    }
+
+    #small-circle{
+        width: 75vw;
+        height: 75vw;
+    }
+
+
+
+
+
+
+
+
+    #overlay>h1{
+        font-size: 20vw;
+    }
+
+    #gola{
+        width: 25vw;
+        height: 25vw;
+    }
+
+
+    #pinkpart {
+        width: 80vw;
+    }
+
+
+
+
+
+
+
+    .circle{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    #s-top h1{
+        font-size: 50vw;
+        bottom: 20px;
+
+    }
+
+    #s-btm p{
+        width: 90%;
+        font-size: 5vw;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
